@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HCI Project - 1</title>
+    <link rel="stylesheet" href="./index.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="mb-5" style="background-color: lightgray;">
+
+    <div class="mb-5">
+
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" style="margin-left: 44%;" href="#">
+                <h4><b>Car Dashboard Report</b></h4>
+            </a>
+        </nav>
+    </div>
+    <div class=" ml-4" style="margin-top:85px ;">
+
+        <h3>Current design of the Car Dashboards :</h3>
+    </div>
+    <div class="card-group row mt-4">
+        <div class="card col-5 ml-5">
+            <img src="./Fault-1.jpg" style="height: 470px;width: 618px; margin-left: -15px;" class="card-img-top"
+                alt="Original Working Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Dashboard - 1</h5>
+                <p class="card-text">
+                    <b>PROS</b><br>
+                <ul>
+                    <li>
+                        It has good structure in seperating the total distance covered and fuel indicator.
+                        <ul>
+                            <li>
+                                It makes user to easly read the data from dashboard.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        It have a good font for "Parking","Driving","Reverse".
+                        <ul>
+                            <li>
+                                Since it is important, making it with bigger font will make user to understand the
+                                position faster.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <b>CONS</b>
+                <ul>
+                    <li>
+                        No Order for the Indicators.
+                        <ul>
+                            <li>
+                                This will confuse the users for several minutes.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Same Speedometer and Tachchometer Size.
+                        <ul>
+                            <li>
+                                Some Cars will have Speedometer on Right and SOme cars will have on left. Keeping both
+                                the speedometer and tachometer of same size will make user to think a sec to understand
+                                the interface.
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        User needs time to get used to this interface.
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="card col-5 ml-5">
+            <img src="./Fault-2.jpg" style="height: 470px;width: 618px; margin-left: -15px;" class="card-img-top"
+                alt="Original Working Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Dashboard - 2</h5>
+                <p class="card-text">
+                    <b>PROS</b>
+                <ul>
+                    <li>
+                        Compared to previous design, this design has better organization of their indicatiors.
+                        <ul>
+                            <li>
+                                This is important because it will make user to lookup to a particular indicator
+                                instantly.
+                            </li>
+                            <li>
+                                This makes user to find the indicator faster because they are well organised.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        It has better display of the car-instructions.
+                        <ul>
+                            <li>
+                                Since it is on the center, all instrucions are easly noted by the Driver.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <b>CONS</b>
+                <ul>
+                    <li>
+                        Eventhough the indicatiors are well organised the speedometer and tachometer are of same size.
+                        <ul>
+                            <li>
+                                Like mentioned this will confuse user for a second because some cars will have it on
+                                either side.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        This Interface has temperature display subset to tachometer and fuel indicator subset to
+                        speedometer.
+                        <ul>
+                            <li>
+                                Not every car will have this same feature. This makes driver to take time for
+                                understanding the interface.
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-group row mt-4">
+        <div class="card col-5 ml-5">
+            <img src="./Fault-3.jpg" style="height: 470px;width: 618px; margin-left: -15px;" class="card-img-top"
+                alt="Original Working Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Dashbaord - 3</h5>
+                <p class="card-text">
+                    <B>PROS</B>
+                <ul>
+                    <li>
+                        It has a clear interface of Speedometer
+                        <ul>
+                            <li>
+                                Having a large speedometer will make user comfortable in tacking speed insted of getiing
+                                confused with the tachometer.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        The fuel reader and the tachometer are of same size.
+                        <ul>
+                            <li>
+                                Because of this the interface is evenly syncronized, which makes user to track the data
+                                easily.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <B>CONS</B>
+                <ul>
+                    <li>
+                        The Indicators are not organized.
+                        <ul>
+                            <li>
+                                The indicators should be well organised.<br>
+                                Due to this interface the available space for indicators is decreased and all the
+                                indicators are forced to fit in that screen.
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        The Digital display is small compared to the speedometer.
+                        <ul>
+                            <li>
+                                By having a well designed speedometer interface and by having very small digital screen
+                                makes user unconfortable.
+                            </li>
+                            <li>
+                                Showing all the details in a single and small digital screen makes user to take time in
+                                understanding the data.
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="col-1"></div>
+
+        <div class="card col-5 ml-5">
+            <img src="./Fault-4.png" style="height: 470px;width: 618px; margin-left: -15px;" class="card-img-top"
+                alt="Original Working Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Dashboard - 4</h5>
+                <p class="card-text">
+                    <b>PROS</b>
+                <ul>
+                    <li>
+                        It has a great interface of speedometer, tachometer and fuel indicator.
+                        <ul>
+                            <li>
+                                Because of the colour representation, the user can easyly track and have a easy way of
+                                tracking data.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        The indicators can be organized since the interface is completly digital.
+                    </li>
+                </ul>
+                <b>CONS</b>
+                <ul>
+                    <li>
+                        It has less space show the indicators.
+                        <ul>
+                            <li>
+                                Eventhough it has a great interface it has less space for indicators. To show all the
+                                indicators the dashboard will get filled up and makes user uncomfortable.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        The fuel indicator is completly off matched beacuse of the color.
+                        <ul>
+                            <li>
+                                Eventhough having a full fuel in car, representing it with RED color makes the user
+                                confuse.
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-group row mt-4">
+        <div class="col-3"></div>
+        <div class="card col-5 ml-5">
+            <img src="./Fault-5.jpg" style="height: 470px;width: 618px; margin-left: -15px;" class="card-img-top"
+                alt="Original Working Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Dashboard - 5</h5>
+                <p class="card-text">
+                    <b>PROS</b>
+                <ul>
+                    <li>
+                        It has a good interface in representing all the indvidual parts.
+                    </li>
+                    <li>
+                        It has important indicators on the top and rest of thm on the bottom. This makes user very
+                        comfortable and in tracking the data.
+                    </li>
+                    <li>
+                        It has seperate places for seperate indicatos for door indicators and digital representation of
+                        data, this makes user very easy to lookup the data at since they are at specific positions.
+                    </li>
+                    <li>
+                        It has a good representation of fuel and temperature indicators.
+                    </li>
+                </ul>
+                <b>CONS</b>
+                <ul>
+                    <li>
+                        The only problem with this interface is that they have same size for speedometer and tachometer.
+                        <ul>
+                            Since some car will have speedometer on right, making this interface needs new user to take
+                            time to get userd to this dashboard.
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class=" ml-4" style="margin-top:85px ;">
+
+        <h3>Most Common Features of a Car Dashboards:</h3>
+        <div class="ml-5 mt-4">
+            <ul>
+                <li>
+                    <b>Speedometer : </b> This is the most common and important feature which is used by the driver
+                    since it represents the speed of the car.<br>
+                </li>
+                <li>
+                    <b>tachometer : </b> This is the also an important feature which is used by the driver since it
+                    represents the number of rotation per minute and this tell the performance of the engine.<br>
+                </li>
+                <li>
+                    <b>Fuel Indicator : </b> This is an important feature which is used to represent the fuel level and
+                    <br>
+                </li>
+                <li>
+                    <b>Temperature Indicator : </b> This is an important feature which is used to determine the engine
+                    temperature tells the condition of the engine to the driver.<br>
+                </li>
+                <li>
+                    <b>Left/Right Signals : </b> This feature is used when the driver has to take a turn Left/Right.
+                    This is important because it gives information to other drivers about the turn the driver making. It
+                    helps in reducing the accidents.<br>
+                </li>
+                <li>
+                    <b>Hazard Lights : </b> This feature is used when the driver has to Park and to notify other
+                    vehicles about the presence of the car. This represents that the car has some issues.<br>
+                </li>
+                <li>
+                    <b>Door Indicator : </b> This feature represents which door is open. This is also most used feature
+                    because it tells the specific door to close and it helps user to close that specific opend door
+                    easily.<br>
+                </li>
+                <li>
+                    <b>Lights : </b> This feature is used by the driver to know the Lights position. This feature allows
+                    driver to know the current lights positon and helps to change it or turn it off.<br>
+                </li>
+                <li>
+                    <b>Check Engine Light : </b> This feature represents the engine condition and tells that the engine
+                    has to be checked. This is also important feature because it represents that the engine has some
+                    issues.<br>
+                </li>
+                <li>
+                    <b>Distance Covered : </b> This feature is used by the driver to know the total distance covered by
+                    the car. This feature allows driver to reset the values so that a new record can be started.<br>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <div class=" ml-4" style="margin-top:45px ;">
+
+        <h3>Rare Uses of a Car Dashboards:</h3>
+        <div class="ml-5 mt-4">
+            <ul>
+                <li>
+                    <b>Park/Drive/Reverse Indicator : </b> This represents the mode of the car. Since driver knows the
+                    mode he is in, this feature is very rarely used ny the driver.
+                </li>
+                <li>
+                    <b>Mileage Indicator : </b> This represents the mode of the car. Since driver knows the mode he is
+                    in, this feature is very rarely used by the driver.
+                </li>
+                <li>
+                    <b>Steering Lock Indicator : </b> This indicator turns on when the steering gets locked. This
+                    happens very rarly and with constant checkup this feature is almost never used by the driver.
+                </li>
+                <li>
+                    <b>Cruice Control Indicator : </b> This indicator turns on when the car enters into cruice control
+                    mode. Since driver makes the decision of on/off cruice control it is also rarly used.
+                </li>
+                <li>
+                    <b>Extra Speedometer : </b> Some interfaces has duel speedometer display (MPH & KMPH). Most of the
+                    drivers are used to their respective region units, making duel speedometer is rarly used by the
+                    driver.
+                </li>
+            </ul>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class=" ml-4" style="margin-top:45px ;">
+
+        <h3>The Controls That The User Interacts With The Car Dashboards:</h3>
+        <div class="ml-5 mt-4">
+            Like mentioned in the "Most Common Features of Car Dashbaords", all these features interactes with the
+            driver all the time.
+            <ul>
+                <li>
+                    The Speedometer, Left/Right Signals, Fuel Indicator are the most common features that interact with
+                    the driver when the driver is driving that car.
+
+                </li>
+                <li>
+                    The Distance covered, Door Indicators, Engine Temperature are also important but not as frequently
+                    interacted to the user compared to the above mentioned features.
+                </li>
+                <li>
+                    The Hazard Lights and Resetting the distance covered are the two features also directly interacted
+                    by the user. The User can turn on/off the hazard lights according to the need and the driver can
+                    reset the total distance covered at anytime.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class=" ml-4" style="margin-top:45px ;">
+
+        <h3>Common Mistakes With The Current designs:</h3>
+        <div class="ml-5 mt-4">
+            The current dashboard designs are prioritised accordign to the latest needs. Some missing the organization
+            and some missing the staranderds and some are completly not relavent to the features. Like mentioned in the
+            first section, those 5 dashboards have their own pros and cons but not one of the design has better way of
+            helping driver in all possible ways.
+            <ul>
+                <li>
+                    If the organization is perfect the speedometer and tachometer is not adjusted to the user
+                    convenient. It is designed to make the dashboard pretty.
+                </li>
+                <li>
+                    If the speedometer, tachometer, fuel indicator are well organised the rest of the indicatiors are
+                    not particullarly designed to help the user to track those signals but to coverup the space in the
+                    dashboard.
+                </li>
+                <li>
+                    The Color representation is also not properly utilised because of using wrong color at wrong time
+                    will defenity confuse the user at all time.
+                </li>
+                <li>
+                    Making a congested dashboard might provide space for other requirments but it will not help the
+                    driver at all. The representation should be well organized and should be easyly understandable by
+                    the user.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class=" ml-4" style="margin-top:45px ;">
+
+        <h3>Improvements To make On The Control Interface:</h3>
+        <div class="ml-5 mt-4">
+            By considering all the pros and cons from the mentioned 5 dashboards, these are the best suggestions which
+            makes the dashboard well organised and easily understandable by the driver.
+            <ul>
+                <li>
+                    Providing a place for all indicators in an order (alphabetically or commonly used indicators) makes
+                    the user to easily tack the data.
+
+                </li>
+                <li>
+                    By having larger speedometer and smaller tachometer helps user to track the speed without any delays
+                    and makes user comfortable in getting the right information at right time.
+
+                </li>
+                <li>
+                    By adding specific colors to the specific features also helps user to understand the importance of
+                    the indicators.
+                </li>
+                <li>
+                    The colors also help in tracking the importance of all the features so implementing the colors in
+                    Speedometer, tachometer and fuel indicator will help the driver in getting the information faster
+                    and helps the driver.
+                </li>
+                <li>
+                    Insted of showing the door indicator that "Doors are open", showing which door is opend will help
+                    driver to close that specific door. This helps driver in saving time insted of checking all the
+                    doors.
+                </li>
+                <li>
+                    Eventhough the Park/Drive/Reverse indicator is rarly used by the driver, making it with a large font
+                    is essential because it represents the mode the car.
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class=" ml-4" style="margin-top:45px ;">
+
+        <h3>My Design for the Car Dashboard Control Interface:</h3>
+        <div class="ml-5 mt-4">
+            First as usual the driver has to start the engine. I provided two buttons, one for "Engine Start" and
+            another for "Engine Stop".
+            <br>
+            <br>
+            <img src="./EngineStart.PNG" class="ml-5">
+            <br>
+            The orange border indicates the active button. If the engine is currently not running then "Engine Start"
+            button will be active to start the engine. If the engine is running then "Engine Stop" will be active to
+            stop the engine.
+            Bellow case-1 represents that the Engine is stoped and case-2 represents the engine is currently running.
+            <br>
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <img src="./EngineStart.PNG" class="col-3 ml-5">
+                <div class="col-1"></div>
+                <img src="./EngineStop.PNG" class=" col-3 ml-5">
+            </div>
+            <div class="row ml-5 mb-5">
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-3 ml-5">
+                    <b class="ml-3"> Case-1</b>
+
+                </div>
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-3 ml-5">
+                    <b> Case-2</b>
+
+                </div>
+            </div>
+            The dashboard design is explained below. <br>
+            The dashboard I designed has every aspect of pros and resolved cons of all 5 dashboards which are mentioned
+            in first section.<br>
+            The below picture represents the basic interface of my design.<br>
+            <div style="margin-left: 30%;" class="mt-3 mb-5">
+                <img src="./BasicInterface.PNG" class="ml-5 ">
+
+
+            </div>
+           
+            Initially the car will be in Park mode and to move the car we have to change the mode to either Drive or
+            Reverse. To change mode press "D" for Drive, "R" for reverse, "P" for parking.
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <img src="./BasicInterface.PNG" class="col-3 ml-5">
+
+                <img src="./DriveInterface.PNG" class=" col-3 ml-5">
+
+                <img src="./ReverseInterface.PNG" class=" col-3 ml-5">
+            </div>
+            <div class="row ml-5 mb-5">
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-2 ml-5">
+                    <b class="ml-3">Park Mode</b>
+
+                </div>
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-2 ml-5">
+                    <b> Drive Mode</b>
+
+                </div>
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-2">
+                    <b> Reverse Mode</b>
+
+                </div>
+            </div>
+            Once the Mode is changed, the user can press "Up arrow" key which is accelaration. The design has digital number representation and color representation aswell. When the speed is between o-59, it shows green color. When the speed is between 60-119, it shows yellow. When the speed is between 120-180, it shows red color.
+            <br><br>
+            Similarly the Tachometer also changes color at intervels 3 and 6 i.e, 0-3 RPM will give green color, 3-6 it gives Yellow and 6-9 gives red color.
+            <br><br>
+            Simultaniously the Fuel indicator also decreases the value since the vehical is moving. The color representation is implemented as if the fuel is full then it shows green color. As fuel is decreased by 30% then the color is changed to yellow and if it is at last 30% it is represented with red color.
+            <br><br>
+            All these are shown in the below screenshots.
+            <div class="row mt-5 mb-3">
+                <div class="col-1"></div>
+                <img src="./SpeedGreen.PNG" class="col-3 ml-5">
+
+                <img src="./SpeedYellow.PNG" class=" col-3 ml-5">
+
+                <img src="./SpeedRed.PNG" class=" col-3 ml-5">
+            </div>
+            The "Left Arrow" key and "Right Arrow" key are used to take left and right turns respectively. The left blinker blinks on pressing the "Left Arrow" key and the right blinker blinks on pressing the "Right Arrow" key.
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <img src="./LeftSignal.gif" class="col-3 ml-5">
+                <div class="col-1"></div>
+                <img src="./RightSignal.gif" class=" col-3 ml-5">
+            </div>
+            <div class="row ml-5 mb-5">
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-3 ml-5">
+                    <b class="ml-3"> Left Signal</b>
+
+                </div>
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-3 ml-5">
+                    <b> Right Signal</b>
+
+                </div>
+            </div>
+            The Cruice Control is also implemented in this design. By pressing "c" key the cruice control actives. At the bottom the interface the Cruice Control indicator is enabled when the cruice control is activated. By pressing "c" again will disable the cruice control.
+            <div style="margin-left: 30%;" class="mt-3 mb-5">
+                <img src="./CruiceControl.gif" class="ml-5 ">
+
+
+            </div>
+            The Indicators on either side of the screen so that the driver can easily track the indicators and it
+            doesn't take much time to understand the indicator.
+            <div style="margin-left: 20%;" class="mt-3 mb-5">
+                <img src="./IndicatorInterface.PNG" class="ml-5 ">
+
+
+            </div>
+            I have implemented the checking page to check the indicators working status. All the indicators are validated through this page. To refill the fuel or the buttons for hazard lights and to reset the total distance are implemented in this page.
+            <div style="margin-left: 30%;" class="mt-3 mb-5">
+                <img src="./CheckingPage.PNG" class="ml-5 ">
+
+
+            </div>
+            
+            By clicking each button that represented button gets activated which represents that specific indicator has issues and it blincks with red color. By clicking it again, the interface takes it as the issue is resolved and the indicator will go back to normal.
+            <div style="margin-left: 30%;" class="mt-3 mb-5">
+                <img src="./IndicatorChecking.gif" class="ml-5 ">
+
+
+            </div>
+            The Lights are also controlled from the checking page. once the Lights button is clicked the lights are turned to Dipped Beam and if it is again clicked the lights are turned into Full Beam. If th button is again clicked the lights will get turned off.
+       
+            <div style="margin-left: 30%;" class="mt-3 mb-5">
+                <img src="./Lights.gif" class="ml-5 ">
+
+
+            </div>
+            The Door indicators are shown seperatly to each door. The bonnet and trunk are also have indicators when they are open. The priority is given to the bonnet and then to the trunk and then to the normal doors.
+            <br>
+            <br>
+            BONNET -> TRUNK -> DOORS
+            <br>
+            <div style="margin-left: 20%;" class="mt-3 mb-5">
+                <img src="./DoorIndicator.gif" class="ml-5 ">
+
+
+            </div>
+            This design has hazard light implementation also. By clicking the hazard button from checking page the both Left and Right indicators stats blinking. This hazard light active indicator is showed at the bottom of the interface beside cruice control indicator.
+            <div style="margin-left: 30%;" class="mt-3 mb-5">
+                <img src="./HazardLight.gif" class="ml-5 ">
+
+
+            </div>
+          
+            The total distance can be reset using the reset button. This button is available in checking page and by clicing it the total dstance will be reseted to 0.
+            <div style="margin-left: 25%;" class="mt-3 mb-5">
+                <img src="./ResettingDistance.gif" class="ml-5 ">
+
+
+            </div>
+            Once the fuel is completed the engine automatically stops by gradually decreasing the speed and makes Engine Start button active. Without refilling the fuel the Start Engine button will not work.
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <img src="./EmptyFuel.gif" class="col-4 ml-5">
+                <div class="col-1"></div>
+                <img src="./StartNotWorking.gif" class=" col-2 ml-5">
+            </div>
+            <div class="row ml-5 mb-5">
+                <div class="col-1 ml-5"></div>
+
+                <div class="col-4 ml-2">
+                    <b> Auto Decrease the speed when fuel is empty.</b>
+                </div>
+
+                <div class="col-4 ml-5">
+                    <b> When fuel is empty, engine doesn't start.</b>
+
+                </div>
+            </div>
+            To Refill the fuel, the Fuel Refill button is added to the checking page. By clicking and holding on to the Fuel Refill button the fuel will be filled and it can be seen in the interface.
+            <div style="margin-left: 25%;" class="mt-3 mb-5">
+                <img src="./FuelRefill.gif" class="ml-5 ">
+
+
+            </div>
+            Finally the temperate is displayed on the bottom of the screen. The temperature is measurred in Fahrenheit.
+            <div style="margin-left: 25%;" class="mt-3 mb-5">
+                <img src="./Temperature.PNG" class="ml-5 ">
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
